@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h1Tilte{
+    height: 50px;
+    width: 100%;
+    padding-left: 60px;
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+/* ================ header ================ */
+header{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202021;
+    padding-left: 15px;
+    padding-right: 60px;
+    
+}
+
+/* ----- logo ----- */
+
+#logo{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo i{
+    font-size: 30px;
+    color: rgb(19, 238, 154);
+    margin-right: 10px;
+}
+
+#logo div{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+/* ----- pesquisa ----- */
+
+#containerSearch{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containerSearch i{
+    height: 35px;
+    width: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #151517;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+}
+
+#containerSearch input{
+    height: 35px;
+    width: 550px;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px;
+    outline: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #151517;
+    border: none;
+}
+
+#containerSearch i:hover{
+    cursor: pointer;
+    transition: .5s;
+    color: #fff;
+}
+
+/* ----- perfil ----- */
+
+#perfil{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#perfil img{
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#perfil p{
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+#perfil i{
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* ================ container ================ */
+#container{
+    min-height: calc(100vh - 55px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151517;
+    position: relative;
+}
+
+/* ================ container  LEFT ================ */
+#left{
+    position: fixed;
+    height: 100%;
+    width: 13%;
+    background-color: #202021;
+    left: 0;
+    top: 55px;
+}
+
+/* ----- menu ----- */
+#containerMenu{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.itemsMenu{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    transition: .5s;
+}
+
+.itemsMenu i{
+    font-size: 18px;
+    color: #fff9;
+    margin-right: 25px;
+    transition: .5s;
+}
+
+.itemsMenu p{
+    font-size: 14px;
+    color: #fff9;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+.itemsMenu:hover i{
+    color: #fff;
+    transition: .5s;
+}
+
+.itemsMenu:hover p{
+    color: #fff;
+    transition: .5s;
+}
+
+.itemsMenu:hover{
+    transition: .5s;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+/* ----- title subscribes ----- */
+#titleSubscribes{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    
+    font-size: 12px;
+    color: #fff9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#containerSubscribes{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cardsSubscribes{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    transition: .5s;
+}
+
+.cardsSubscribes img{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cardsSubscribes p{
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.cardsSubscribes:hover{
+    transition: .5s;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+/* ================ container RIGHT ================ */
+#right{
+    position: fixed;
+    height: 100%;
+    width: 87%;
+    right: 0;
+    top: 55px;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+#containerMainMusic{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMusic{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      
+}
+
+.mainMusic:nth-child(1){
+    margin-right: 20px; 
+}
+
+.mainMusic img{
+    height: 450px;
+    width: 750px;
+    border: none;
+    border-radius: 5px;
+}
+
+.descriptionMainMusic{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.descriptionMainMusic img{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.containerInfoMusic{
+    flex-direction: column;
+}
+
+.containerInfoMusic .musicName{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.containerInfoMusic .authorName{
+    font-size: 14px;
+    color: #fff9;
+}
+
+/* ================ category ================ */
+
+#musicCategory{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cardMusicCategory{
+    height: 40px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ================ more musics ================ */
+#containerMusicRecommendation{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardMusicRecommendation{
+    height: 240px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    margin: 10px;
+}
+
+.cardMusicRecommendation img{
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.descriptionMusicRecommendation {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.descriptionMusicRecommendation img{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
